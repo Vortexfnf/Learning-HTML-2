@@ -1,0 +1,50 @@
+@keyframes color-change {
+    0% {
+      color: #424242;
+    }
+  
+    50% {
+      color: #616161;
+    }
+  
+    100% {
+      color: #424242;
+    }
+}
+
+body {
+    font-family: Inter; /* Familia de fuentes */
+    font-size: 33px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #828282; /* El color del fondo de la página web */
+    color: #FFFFFF; /* El color del texto*/ 
+}
+h1 {
+    animation: color-change 1s infinite;
+    font-size: 48px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+
+}
+p {
+    color: #dadada;
+}
+/* Your other styles */
+
+@keyframes p-background-change {
+    0% {
+        background-color: rgb(80, 80, 80);
+    }
+    100% {
+        background-color: #b9b9b9;
+    }
+}
+
+.hover-animation {
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hover-animation:hover {
+    background-color: #b9b9b9;
+    animation: p-background-change 0.3s alternate ease-in-out; /* Add the animation on hover */
+}
